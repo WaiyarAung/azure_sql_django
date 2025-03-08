@@ -17,6 +17,8 @@ class Migration(migrations.Migration):
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('store_id', models.IntegerField(unique=True)),
                 ('store_location', models.CharField(max_length=100)),
+                ('store_created_date', models.DateTimeField(auto_now_add=True)),
+                ('store_updated_date', models.DateTimeField(auto_now=True)),
             ],
         ),
     ]
